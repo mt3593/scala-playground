@@ -4,7 +4,6 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 libraryDependencies ++= {
@@ -19,3 +18,5 @@ libraryDependencies ++= {
     "org.scalatest"     %% "scalatest" % scalaTestV % "test"
   )
 }
+
+mainClass in Compile := Some("AkkaHttpHelloWorld")
